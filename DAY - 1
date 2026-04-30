@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+int main(){
+    double celcius;
+    double fehrenheit;
+    cout<<celcius;
+    cin>>fehrenheit;
+    fehrenheit=(celcius*9.0/5.0)+32;
+    cout<<fehrenheit;
+    return 0;
+}
