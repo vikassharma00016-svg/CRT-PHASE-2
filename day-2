@@ -111,5 +111,34 @@ int main(){
         cout<<"enter the valid number";
         break;
     }
+\\check day or night if night and motion detected turn on led with 100% and if no motion then 10% at night or in day off the led
+#include<iostream>
+using namespace std;
+
+int main(){
+    string dayornight;
+    cout << "Enter DAY or NIGHT: " << endl;
+    cin >> dayornight;
+
+    if(dayornight == "NIGHT" || dayornight == "night"){
+        bool motiondetected;
+        cout << "Enter motion detected (1 for yes, 0 for no): ";
+        cin >> motiondetected;
+
+        if(motiondetected){
+            cout << "Turn the LED with 100% brightness";
+        } else {
+            cout << "Turn the LED with 10% brightness";
+        }
+    }
+    else if(dayornight == "DAY" || dayornight == "day"){
+        cout << "Turn off the light";
+    }
+    else {
+        cout << "Enter a valid input";
+    }
+
+    return 0;
+}
     return 0;
 }
