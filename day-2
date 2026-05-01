@@ -1,0 +1,15 @@
+if-else
+  \\check wheather a person is eligible for vote#include<iostream>
+using namespace std;
+int main(){
+    int age;
+    cout<<"enter the age"<<endl;
+    cin>>age;
+    if(age>=18){
+        cout<<"eligible for vote"<<endl;
+    }
+    else{
+        cout<<"not eligible for vote";
+    }
+    return 0;
+}
