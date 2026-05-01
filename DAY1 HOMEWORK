@@ -1,0 +1,112 @@
+HOME WORK 
+QUES 1 ALPHABETS CHECKER
+#include<iostream>
+using namespace std;
+int main(){
+    char ch;
+    cout<<"enter the value in char"<<endl;
+    cin>>ch;
+    if(ch>='A'&&ch<='Z'){
+        cout<<"the alphabet is upper case";
+    }
+    else if(ch>='a'&&ch<='z'){
+        cout<<"the alphabet is lower case";
+    }
+    else{
+        cout<<"invalid data";
+    }
+    return 0;
+}
+QUES 2 AGE CHECKER
+#include <iostream>
+using namespace std;
+int main(){
+    int age;
+    cout<<"enter the age"<<endl;
+    cin>>age;
+    if(age>0&&age<=1){
+        cout<<" babyy";
+    }
+    else if(age>1&&age<=3){
+        cout<<"toddler";
+    }
+    else if(age>=4&&age<=12){
+        cout<<"childhood";
+    }
+    else if(age>=13&&age<=18){
+        cout<<"adolesence";
+    }
+    else if(age>18&&age<=100){
+        cout<<"senior";
+    }
+        else {
+            cout<<"invaild input";
+        
+        
+    }
+    return 0;
+    
+}
+ques 3 sum and avg of 3 digit
+#include<iostream>
+using namespace std;
+int main(){
+    int num1;
+    int num2;
+    int num3;
+    cout<<"enter the value in num 1"<<endl;
+    cin>>num1;
+    cout<<"enter the value in num 2"<<endl;
+     cin>>num2;
+    cout<<"enter the value in num 3"<<endl;
+    cin>>num3;
+    
+    int sum;
+    sum=(num1+num2+num3);
+    int avg;
+    avg=(sum)/3;
+    cout<<"the sum is"<<sum<<endl<<"the avg is"<<avg;
+    return 0;
+}
+QUES 4 AREA OF FIGURES
+#include<iostream>
+using namespace std;
+int main(){
+    int choice;
+    cout<<"enter the choice"<<endl;;
+    cin>>choice;
+      float area;
+        float r;
+    if(choice==1){
+        cout<<"you choose circle"<<endl;
+        float area;
+        area=(3.14*r*r);
+        cout<< "the area of circle is"<<area;
+    }
+    else if(choice==2){
+        cout<<"you choose a rectangle"<<endl;
+        int length;
+        int breath;
+        cout<<"enter the length"<<endl;
+        cin>>length;
+        cout<<"enter the breath"<<endl;
+        cin>>breath;
+        area=(length*breath);
+        cout<<"the area of rectangle is "<<area;
+        
+    }
+    else if(choice==3){
+        cout<<"you choose square"<<endl;
+        int side;
+        cout<<"enter the side"<<endl;
+        cin>>side;
+        area=(side*side);
+        cout<<"the area of square is"<<area;
+        
+    }
+    else{
+        cout<<"invaild choice";
+        
+    }
+    return 0;
+}
