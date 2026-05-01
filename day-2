@@ -35,6 +35,20 @@ int main(){
             cout << "Not eligible for vote";
         }
     }
-
+\\ check two number and print the largest using ternery operator
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    int b;
+    int max;
+    cout<<"enter the value in a" <<endl;
+    cin>>a;
+    cout<<"enter the value in b"<<endl;
+    cin>>b;
+    max=(a>b)?a:b;
+    cout<<"the large value is"<<max;
+    return 0;
+}
     return 0;
 }
