@@ -13,3 +13,28 @@ int main(){
     }
     return 0;
 }
+ \\ check the person is eligible for vote and if age is > 50 print senior citizen
+#include<iostream>
+using namespace std;
+
+int main(){
+    int age;
+    cout << "Enter the age" << endl;
+    cin >> age;
+
+    if(age >= 18){
+        if(age >= 50){
+            cout << "Senior citizen and eligible for vote";
+        } else {
+            cout << "Eligible for vote";
+        }
+    } else {
+        if(age < 0){
+            cout << "Enter a valid age";
+        } else {
+            cout << "Not eligible for vote";
+        }
+    }
+
+    return 0;
+}
