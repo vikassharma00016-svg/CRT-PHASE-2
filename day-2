@@ -87,3 +87,29 @@ int main(){
 }
     return 0;
 }
+\\create a ivr system for a shopping website
+#include<iostream>
+using namespace std;
+int main(){
+    int num;
+    cout<<"enter the number"<<endl;
+    cin>>num;
+    switch(num){
+        case 1:
+        cout<<"support";
+        break;
+        case 2:
+        cout<<"talk for billing part";
+        break;
+        case 3:
+        cout<<"technical support";
+        break;
+        case 4:
+        cout<<"talk to agent";
+        break;
+        default:
+        cout<<"enter the valid number";
+        break;
+    }
+    return 0;
+}
